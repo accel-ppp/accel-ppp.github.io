@@ -12,13 +12,13 @@ Example Accel-ppp configuration:
 .. code-block:: sh
 
   [modules]
-    pppd_compat
+  pppd_compat
 
   [pppd-compat]
-    ip-up=/etc/accel-ppp_ip-up.sh
-    ip-down=/etc/accel-ppp_ip-down.sh
-    ip-change=/etc/accel-ppp_ip-up.sh
-    radattr-prefix=/run/radattr
+  ip-up=/etc/accel-ppp_ip-up.sh
+  ip-down=/etc/accel-ppp_ip-down.sh
+  ip-change=/etc/accel-ppp_ip-up.sh
+  radattr-prefix=/run/radattr
 
 .. admonition:: Note:
 
