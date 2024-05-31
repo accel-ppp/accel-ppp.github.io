@@ -426,3 +426,8 @@ The ``username=ifname|lua:function_name`` allow set custom LUA function to form 
 ``ipv6=0|1`` will activate support ipv6 on interface. If not defined, inherit global params.
 
 ``weight=n`` is load balancing mechanism based on weight. ``weight=0`` has special meaning as backup (fail-over) interface, f.e. it terminates session on any received weight.
+
+**check-ip=0|1**
+  By default is: ``check-ip=0``
+
+  Specifies whether accel-ppp should check if IP already assigned to other ppp or ipoe interface.
