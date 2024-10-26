@@ -9,7 +9,7 @@ Requirment
 * cmake-2.6 or later
 * libnl-2.0 or probably later (optional, required for builtin shaper)
 * libcrypto-0.9.8 or probably later (openssl-0.9.8)
-* libpcre
+* libpcre2
 * net-snmp-5.x (optional, required for snmp)
 * libssl-0.9.8 or probably later (openssl-0.9.8)
 * liblua5.1 probably later (optional, required for create username fundamental on packet header information)
