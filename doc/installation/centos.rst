@@ -13,13 +13,13 @@ Before compile and build package need satisfy some dependencies
 * **cmake** - open-source system that manages the build process
 * **gcc** - GNU Compiler Collection (GCC) is a compiler system
 * **git** - version-control system for tracking changes, (need for downloading source code) 
-* **pcre-devel** - source code of pcre lib, accel-ppp need it for use reg expression
+* **pcre2-devel** - source code of pcre2 lib, accel-ppp need it for use reg expression
 * **openssl-devel** - source code of lib ssl, accel-ppp need it for use regular expression
 * **lua-devel** - this need for create custom username (IPoE) from packet. Script write on lua language 
 
 .. code-block:: sh
 
-  yum -y install rpm-build make cmake gcc git pcre-devel openssl-devel lua-devel
+  yum -y install rpm-build make cmake gcc git pcre2-devel openssl-devel lua-devel
 
 After install dependencies, download accel-ppp source code with git client, tree master . Master tree contain actual patches last release. 
 
