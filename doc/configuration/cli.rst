@@ -65,3 +65,5 @@ Configuration overview of the command line interface.
   * ``netns`` - network namespace name
   * ``vrf`` - Virtual Routing and Forwarding 
   * ``ipoe-type`` - IPoE session type (UP/DHCP)
+  * ``inbound-if`` - Session inbound interface
+  * ``service-name`` - PPPoE service name
