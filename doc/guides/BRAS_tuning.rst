@@ -115,11 +115,16 @@ repeat with file ``/lib/udev/net.agent``
 SYSTEMD-UDEV optimizations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Delete ``99-default.link`` from ``/lib/systemd/network/`` directory
+1. Create file ``90-ipoe.link`` in ``/lib/systemd/network/`` directory
 
 .. code-block:: sh
 
-    rm /lib/systemd/network/99-default.link
+    [Match]
+    OriginalName=ipoe* ppp*
+
+    [Link]
+    NamePolicy=keep
+    MACAddressPolicy=none
 
 2. Change ``/lib/udev/rules.d/99-systemd.rules``
 
