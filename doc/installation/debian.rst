@@ -34,6 +34,7 @@ For building code need we can set next params:
 * **-DBUILD_IPOE_DRIVER=TRUE** include IPoE module.This module need if you want use accel-ppp as shared interface.
 * **-DBUILD_VLAN_MON_DRIVER=TRUE** include vlan monitoring module. If you want create vlan automatically on analyse IP headers with regular expression set on accel-ppp config file. (Available for IPoE and PPPoE)
 * **-DKDIR=/usr/src/linux-headers-`uname -r`** sets path to Linux kernel source code. Need only for build IPOE, VLAN-MON.
+* **-DMODULES_KDIR=version** sets path to /lib/modules/**version**. Need for IPOE and VLAN-MON modules installation if target kernel differs, for example before reboot after upgrade.
 * **-DCMAKE_INSTALL_PREFIX=/usr** path for install executable code. If you build DEB package, not recommended change this.
 * **-DCPACK_TYPE=Debian10** this arguments for building DEB package. If used debian other version, set it. For example, if used debian 9 set **-DCPACK_TYPE=Debian9**
 
